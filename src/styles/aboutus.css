@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+
+:root {
+    --bg-color-primary: #464646;
+    --bg-color-secondary: #262626;
+    --font-color-primary: #998077;
+}
+
+
+
+/*NAVBAR PAGE*/
+
+
+
+
+
+/*HERO PAGE */
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ */
+
+nav {
+    position: sticky;
+    top: 0;
+    
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 95%;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 100;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /*tostopflickeringoftextinsafari*/transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  -webkit-transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: translate(-35%,0);
+  -webkit-transform: translate(-35%,0);
+  -moz-transform: translate(-35%,0);
+  -ms-transform: translate(-35%,0);
+  -o-transform: translate(-35%,0);
+}
+
+.hero-container {
+    
+    
+    height: 50vh;
+    width: 100%;
+    background-color: #46464646;
+    
+    
+}
+
+.hero-image{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top:0;
+    transform: translate(0,-35%);
+    -webkit-transform: translate(0,-35%);
+    -moz-transform: translate(0,-35%);
+    -ms-transform: translate(0,-35%);
+    -o-transform: translate(0,-35%);
+}
+
+.hero-header {
+  
+    text-align: center;
+    text-shadow: #b93a3a 50px;
+
+    
+}
+
+.hero-desc{
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 2vh;
+    font-weight: 100;
+}
+.hero{
+    color: white;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+.btn {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(140, 117, 110);
+    border: 1px solid white;
+    margin-top: 10px;
+    color: white;
+    
+}
+
+.contactus {
+    margin-left: 20%;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*HERO PAGE*/
+
+
+/*History PAGE*/
+
+.history-container{
+    height: 80vh;
+    width: 100%;
+    background-color: var(--bg-color-primary);
+    color: white;
+
+}
+
+.history-header {
+    padding: 20px;
+   
+}
+hr {
+    width: 85%;
+   margin-left: 10%;
+
+}
+
+.history{
+    margin-left: 10%;
+}
+.history-desc {
+    font-size: 20px;
+    color: var(--font-color-primary);
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.history-images{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+ 
+    width: fit-content;
+ 
+    box-shadow: rgba(0, 0, 0, 0.250) 3px 3px 5px 5px;
+
+  
+}
+
+.history-images img {
+    height: 20vw;
+    width: 25vw;
+    background-color: grey;
+}
+
+.history-learnmore {
+    margin-top: 5vh;
+    margin-left: 10%;
+}
+
+
+/*PRODUCT PAGE*/
+
+.awards-container{
+    height: 90vh;
+    width: 100%;
+    background-color: var(--bg-color-primary);
+    color: white;
+
+}
+
+.awards-header {
+    padding: 20px;
+   
+}
+
+
+.awards{
+    margin-left: 10%;
+}
+.awards-desc {
+    font-size: 20px;
+    color: var(--font-color-primary);
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.awards-images{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+ 
+    width: fit-content;
+ 
+    box-shadow: rgba(0, 0, 0, 0.250) 3px 3px 5px 5px;
+
+  
+}
+
+.awards-images img {
+    height: 20vw;
+    width: 25vw;
+    background-color: grey;
+}
+
+.awards-learnmore {
+    margin-top: 5vh;
+    margin-left: 10%;
+}
+
+
+/*FOOTER PAGE**/
+
+footer {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--bg-color-secondary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    
+
+}
+
+.footer-links {
+   display: flex;
+list-style: none;
+}
+.footer-links li {
+
+    float: left;
+    margin: 1em;
+}
+#linebreak-footer {
+    width: 80%;
+    margin-left: 0;
+ 
+    
+    
+}

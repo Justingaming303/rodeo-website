@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,30 +10,43 @@
   </head>
 
   <body>
-    <div class="navbar-container"></div>
-   
+
+
 
     <div class="hero-container hero">
-        <div class="navbar">
-            <div class="burger">
-              <div class="burger-bun"></div>
-              <div class="burger-bun"></div>
-              <div class="burger-bun"></div>
-      
-      
-            </div>
-            <div class="cross">
-                <div class="diagonal-left "></div>
-                <div class="diagonal-right"></div>
-            </div>
-      
-          </div>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--    Made by Erik Terwan    -->
+          <!--   24th of November 2015   -->
+          <!--        MIT License        -->
+
+          <input type="checkbox" />
+
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+
+          <ul id="menu">
+            <a href="./aboutus.html">
+              <li>About Us</li>
+            </a>
+            <a href="#">
+              <li>Contact Us</li>
+            </a>
+            <a href="#">
+              <li>Partners</li>
+            </a>
+            <a href="#">
+              <li>Products</li>
+            </a>
+
+          </ul>
+        </div>
+      </nav>
       <div class="hero-head-container hero">
-        <img
-          src="./src/img/outdoor-rodeo.jpg"
-          alt="Outdoor Rodeo"
-          class="hero-image hero"
-        />
+        <img src="./src/img/outdoor_1.jpg" alt="Outdoor Rodeo" class="hero-image hero" />
         <h1 class="hero-header hero">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
         </h1>
@@ -50,7 +64,7 @@
         </h2>
       </div>
       <div class="buttons">
-        <button class="aboutus btn">ABOUT US</button>
+        <button class="aboutus btn"><a href="./aboutus.html">ABOUT US</a></button>
         <button class="contactus btn">CONTACT US</button>
       </div>
     </div>
@@ -106,15 +120,18 @@
       <button class="contactus btn" style="margin-left: 0">CONTACT US</button>
 
       <ul class="footer-links">
-        <li>Home</li>
-        <li>About Us</li>
+
+        <a href="./aboutus.html">
+          <li style="text-decoration: none;color: white">About Us</li>
+        </a>
         <li>Partners</li>
         <li>Products</li>
       </ul>
       <hr id="linebreak-footer" />
 
-      <h3>Copyright 2022 PT. Prima Jaya</h3>
+      <h3>&#169; Copyright 2022 PT. Prima Jaya</h3>
     </footer>
   </body>
   <script src="./src/script/index.js"></script>
+
 </html>
